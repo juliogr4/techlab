@@ -1,0 +1,23 @@
+<!-- <div class="blog-container">
+    <ng-container *ngFor="let item of content">
+      <h1 *ngIf="item.type === 'title'">{{ item.text }}</h1>
+      <p *ngIf="item.type === 'paragraph'">{{ item.text }}</p>
+      <img *ngIf="item.type === 'image'" [src]="item.src" [alt]="item.alt">
+      <div *ngIf="item.type === 'code'" class="code-block">
+        <pre><code>{{ item.code }}</code></pre>
+        <button (click)="copyCode(item.code)">Copy Code</button>
+      </div>
+    </ng-container>
+  </div>
+   -->
+  <div class="blog-container">
+    <ng-container *ngFor="let item of content">
+      <div *ngIf="item.type === 'title'" class="title" [ngStyle]="item.styles">{{ item.text }}</div>
+      <p *ngIf="item.type === 'paragraph'" class="paragraph" [ngStyle]="item.styles">{{ item.text }}</p>
+      <img *ngIf="item.type === 'image'" [src]="item.src" [alt]="item.alt" class="image" [ngStyle]="item.styles">
+      <div *ngIf="item.type === 'code'" class="code-block" [ngStyle]="item.styles">
+        <pre><code>{{ item.code }}</code></pre>
+        <button (click)="copyCode(item.code)">Copy Code</button>
+      </div>
+    </ng-container>
+  </div>

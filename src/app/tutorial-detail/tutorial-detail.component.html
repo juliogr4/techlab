@@ -1,0 +1,27 @@
+<div class="tutorial-detail">
+  <div class="hero">
+    <img [src]="tutorial.image" alt="{{ tutorial.name }}" class="tutorial-image">
+    <h1>{{ tutorial.name }}</h1>
+    <div class="buttons">
+      <a [routerLink]="['/']" class="btn home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="https://github.com" class="btn github"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://youtube.com" class="btn youtube"><i class="fab fa-youtube"></i> YouTube</a>
+    </div>
+  </div>
+</div>
+
+<div class="course-content">
+  <h2>What You Will Learn</h2>
+  <p class="description">{{ tutorial.description }}</p>
+  <ul>
+    <li *ngFor="let topic of tutorial.topics">
+      <h3>{{ topic.title }}</h3>
+      <ul>
+        <li *ngFor="let subtopic of topic.subtopics">
+          <a [routerLink]="[subtopic.link]">{{ subtopic.name }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <button [routerLink]="[tutorial.initialTopic]" class="start-button">Start Course</button>
+</div>

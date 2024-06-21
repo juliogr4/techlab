@@ -1,0 +1,24 @@
+<div class="hero">
+    <h1 class="home__title">Tutoriais e Projetos</h1>
+    <!-- <p class="hero-tagline">Learn, Code, and Grow with the Best Tutorials</p> -->
+    <div class="social-icons">
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2>Tutorials</h2>
+    <div class="tutorial-list">
+      <div *ngFor="let tutorial of tutorials" class="tutorial-card">
+        <img [src]="tutorial.image" alt="{{ tutorial.name }}" class="tutorial-image">
+        <div class="tutorial-details">
+          <h3>{{ tutorial.name }}</h3>
+          <p class="tutorial__name"> {{ tutorial.title }} </p>
+          <p class="tutorial__status">{{ tutorial.completed ? 'Completed' : 'In Progress' }}</p>
+          <a [routerLink]="[tutorial.name]" class="tutorial__link"></a>
+        </div>
+      </div>
+    </div>
+  </div>

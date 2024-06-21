@@ -1,0 +1,174 @@
+.tutorial-detail {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #355899, #444d6c);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tutorial-image {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+  }
+
+  .home {
+    background: #6a6a30;
+  }
+  
+  .home:hover {
+    background: #646404;
+  }
+  
+  .github {
+    background: #333;
+  }
+  
+  .github:hover {
+    background: #555;
+  }
+  
+  .youtube {
+    background: #ff0000;
+  }
+  
+  .youtube:hover {
+    background: #cc0000;
+  }
+  
+  .content {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  ul li ul li {
+    margin-bottom: 5px;
+  }
+  
+
+  /* context */
+  .course-content {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 64rem;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .course-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .course-content .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .course-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .course-content ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .course-content ul li ul li {
+    margin-bottom: 5px;
+  }
+  
+  .start-button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .start-button:hover {
+    background: #0056b3;
+  }
+  
+.block {
+  width: 100%;
+  text-align: center;
+}
+
+.start-button {
+  font-size: 1.5rem;
+  text-align: center;
+}

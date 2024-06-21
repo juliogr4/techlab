@@ -1,0 +1,1 @@
+*,*:before,*:after{box-sizing:border-box}*{font:inherit;margin:0;line-height:1.5;-webkit-font-smoothing:antialiased;font-family:Roboto,sans-serif;font-weight:400;font-style:normal}img,picture,video,canvas,svg{display:block;max-width:100%}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#__next{isolation:isolate}a{text-decoration:none}button{cursor:pointer}ul,li{list-style:none}
